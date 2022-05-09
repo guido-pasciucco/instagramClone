@@ -7,4 +7,4 @@ function App() {
 export default App;
 
 
-// RETOMAR EL TUTORIAL EN 20:00
+// RETOMAR VIDEO EN 30:50
