@@ -1,21 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import FirebaseContext from './context/firebase'
+import { firebase, FieldValue } from './lib/firebase';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+const root = ReactDOM.createRoot(
+    document.getElementById('root')
+    );
+root.render(
+    <FirebaseContext.Provider value={{firebase, FieldValue}}>
+        <App />
+    </FirebaseContext.Provider>
 
-// Client side rendered app: react (cra)
-// -> Database which is Firebase
-// -> react-loading-skeleton
-// -> tailwind
+);
 
-// Architecture
-    // src
-        // components
-        // constants
-        // context
-        // helpers
-        // lib (firebase is going to live here)
-        // services (firebase functions in here)
-        // styles (tailwinds folder (app/tailwind))
+
+// RETOMAR VIDEO MINUTO 51:12
