@@ -15,4 +15,4 @@ root.render(
 );
 
 
-// RETOMAR VIDEO MINUTO 51:12
+// RETOMAR VIDEO MINUTO 57:39
